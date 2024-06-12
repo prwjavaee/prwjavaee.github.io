@@ -1,0 +1,145 @@
+.schedulepage{
+	background-color: #e7f0f7ea;
+    padding-top: 50px;
+}
+.scheduleTableContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+    .scheduleTable {
+        text-align: center;
+        border: 1px solid #364f6f;
+        width: 80%;
+        margin: 10px auto;
+        tr,th,td {
+            border: 1px solid #364f6f;
+            padding: 8px;
+        }
+        th {
+            background-color: #22324e;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #cfe2f3;
+        }
+        tr:nth-child(odd) {
+            background-color: #e7f3ff;
+        }
+        tr:hover {
+            background-color: #b0d3f7;
+        }
+        td input{
+            all: initial;
+    		text-align: center;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: #494949;
+        font-weight: bold;
+    }
+}
+.scheduleShowContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+	.scheduleTable{
+       width: 95%;
+       margin: 10px auto;
+       border-collapse: collapse;
+       background-color: #fff;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	   th, td {
+	       border: 1px solid #ddd;
+	       padding: 12px;
+	       text-align: center;
+	   }
+	   th {
+	       background-color: #f5ffea;
+	   }
+	   td {
+	       color: #555;
+	   }
+	   tr:nth-child(even) {
+	       background-color: #f2f2f2;
+	   }
+	   tr:hover {
+	       background-color: #f9ffe6;
+	   }
+	       a{
+	       text-decoration: none;
+	       color: black;
+	   }
+	   a:hover {
+	       color: #494949;
+	       font-weight: bold;
+	   }
+	}
+}
+.scheduleListContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+	.scheduleList{
+       width: 95%;
+       margin: 10px auto;
+       border-collapse: collapse;
+       background-color: #fff;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		tr:nth-child(even) {
+			background-color: #f9f9f9;
+		}
+	}
+}
+.btnLike{
+    a {
+        text-decoration: none;
+        display: inline-block; 
+        padding: 3px 6px;
+        background-color: #416c9e; 
+        color: #fff;
+        border-radius: 4px;
+        transition: background-color 0.3s; 
+        margin: -5px;
+    }
+    a:hover {
+        background-color: #2f5b80; 
+        color: #fff
+    }
+    .link-btn1 {
+        position: absolute;
+        top: 7px;
+        left: 60%;
+    }
+    .link-btn2 {
+        position: absolute;
+        top: 7px;
+        left: 68%;
+    }
+	.link-btn3{
+		position: absolute;
+	    top: 7px;
+		left: 76%; 
+	}
+	.link-btn4{
+		position: absolute;
+	    top: 5px;
+		left: 84%; 
+	}
+	.link-goback{
+		position: absolute;
+	    top: 10px;
+		left: 90%; 	
+	}
+}

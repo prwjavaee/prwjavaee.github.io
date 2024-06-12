@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sortable DataTable Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Custom CSS to fix overlapping icons -->
+    <style>
+        table.dataTable thead .sorting:before,
+        table.dataTable thead .sorting:after,
+        table.dataTable thead .sorting_asc:before,
+        table.dataTable thead .sorting_asc:after,
+        table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting_desc:after {
+            display: none;
+        }
+        table.dataTable thead .sorting:after {
+            content: "\f0dc"; /* FontAwesome icon for sorting */
+            font-family: FontAwesome;
+            opacity: 0.3;
+        }
+        table.dataTable thead .sorting_asc:after {
+            content: "\f0de"; /* FontAwesome icon for sorting_asc */
+            font-family: FontAwesome;
+        }
+        table.dataTable thead .sorting_desc:after {
+            content: "\f0dd"; /* FontAwesome icon for sorting_desc */
+            font-family: FontAwesome;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Sortable DataTable Example</h2>
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- 数据将通过 JavaScript 动态填充 -->
+        </tbody>
+    </table>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    // 初始化 DataTable
+    $('#example').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+            "url": "DataServlet", // 后端数据的请求URL
+            "type": "GET"
+        },
+        "columns": [
+            { "data": "id" },
+            { "data": "name" },
+            { "data": "email" }
+        ],
+        "pageLength": 10,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "pagingType": "simple_numbers",
+        "language": {
+            "paginate": {
+                "previous": "Previous",
+                "next": "Next"
+            },
+            "info": "Showing _START_ to _END_ of _TOTAL_ entries"
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+/*課程資料表背景*/
+.coursepage{
+	background-color: #e7f0f7ea;
+    padding-top: 50px;
+}
+/*課程表格*/
+.courseTableContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+    .courseTable {
+        text-align: center;
+        border: 1px solid #364f6f;
+        width: 80%;
+        margin: 10px auto;
+        border-collapse: collapse;
+        tr,th,td {
+            border: 1px solid #364f6f;
+            padding: 8px;
+        }
+		th {
+		    background-color: #364f6f; 
+		    color: #ffffff;
+		}
+		tr:nth-child(even) {
+		    background-color: #cfe2f3;
+		}
+		tr:nth-child(odd) {
+		    background-color: #e7f3ff;
+		}
+		tr:hover {
+		    background-color: #b0d3f7; 
+		}
+    }
+    a {
+        text-decoration: none;
+        color: #164c94c5;
+        font-weight: 500;
+    }
+    a:hover {
+        color: #030e6e;
+        font-weight: 900;
+    }
+    .pgbtn button {
+        background-color: #7090bb;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .coursefunction {
+        justify-content: space-between; 
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 5px 5px;
+    }
+}
+/*修改課程資料表*/
+.courseModifyContainer {
+	position: relative;
+    background: #cfe2f3;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    h2,p{
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .courseModifyTextArea{
+    border: 2px solid #0000009e;
+    color: #4b3b6af5;
+    background-color:white;
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: text;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    }
+    .submit{
+        background-color: white;
+        margin-top:10px;
+        margin-block: 20px;
+        width: 70px;
+        height: 40px;
+    }
+    .submit:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    }
+}
+/*單一課程資料*/
+.coursePageContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+    h2{
+    	margin-bottom:20px
+    }
+	.courseInfo {
+	    margin: auto;
+    	width: 80%;
+    	padding: 20px;
+		background: #cfe2f3;
+	    text-align: center;
+	    border-radius: 8px;
+	    border: 2px solid black;
+	    text-align: left;
+	    font-size:24px;
+	}
+    a {
+        text-decoration: none;
+        color: #164c94c5;
+        font-weight: 500;
+    }
+    a:hover {
+        color: #030e6e;
+        font-weight: 900;
+    }
+}
+/*功能按鈕位置設定*/
+.btnLike{
+    a {
+        text-decoration: none;
+        display: inline-block; 
+        padding: 3px 6px;
+        background-color: #416c9e; 
+        color: #fff;
+        border-radius: 4px;
+        transition: background-color 0.3s; 
+        margin: -5px;
+    }
+    a:hover {
+        background-color: #2f5b80; 
+        color: #fff
+    }
+    .link-btn1 {
+        position: absolute;
+        top: 7px;
+        left: 60%;
+    }
+    .link-btn2 {
+        position: absolute;
+        top: 7px;
+        left: 68%;
+    }
+	.link-btn3{
+		position: absolute;
+	    top: 7px;
+		left: 76%; 
+	}
+	.link-btn4{
+		position: absolute;
+	    top: 5px;
+		left: 84%; 
+	}
+	.link-goback{
+		position: absolute;
+	    top: 10px;
+		left: 90%; 	
+	}
+}
+/* 新增課程按鈕 */
+#newcoursebtn{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #416c9e;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}

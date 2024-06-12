@@ -1,0 +1,31 @@
+.quantitySet {
+    margin: 10px auto;
+}
+
+.quantity,
+.number {
+    height: 27px;
+    text-align: center;
+}
+
+.quantity {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.number {
+    padding: 15px 0;
+    margin: 0 10px;
+    line-height: 30px;
+    width: 60px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.add:hover {
+    background-color: lightgreen;
+}
+
+.minus:hover {
+    background-color: lightcoral;
+}

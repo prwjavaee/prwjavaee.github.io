@@ -1,0 +1,236 @@
+/*教練總表背景*/
+.coachpage{
+    background-color: #e7f0f7ea;
+    padding-top: 50px;
+}
+/*教練表格*/
+.coachTableContainer {
+	position: relative;
+    margin:auto;
+    text-align: center;
+    .coachTable {
+        text-align: center;
+        border: 1px solid #364f6f;
+        width: 60%;
+        margin: 10px auto;
+        border-collapse: collapse;
+        tr,th,td {
+            border: 1px solid #364f6f;
+            padding: 8px;
+        }
+        th {
+            background-color: #22324e;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #cfe2f3;
+        }
+        tr:nth-child(odd) {
+            background-color: #e7f3ff;
+        }
+        tr:hover {
+            background-color: #b0d3f7;
+        }
+    }
+    /*文字顏色*/
+    a {
+        text-decoration: none;
+        color: #164c94c5;
+        font-weight: 500;
+    }
+    a:hover {
+        color: #030e6e;
+        font-weight: 900;
+    }
+    .pgbtn button {
+        background-color: #7090bb;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .coachFunction {
+        justify-content: space-between; 
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 5px 5px;
+    }
+}
+/*修改教練資料表*/
+.coachModifyContainer {
+	position: relative;
+    background: #cfe2f3;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    h2,p{
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .coachModifyTextArea{
+    border: 2px solid #0000009e;
+    color: #4b3b6af5;
+    background-color:white;
+    display: block;
+    width: 370px;
+    height: 100px;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: text;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    }
+    .submit{
+        background-color: white;
+        margin-top:10px;
+        margin-block: 20px;
+        width: 70px;
+        height: 40px;
+    }
+    .submit:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    }
+    .coachModifyPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    }
+}
+/*教練個人資料*/
+.coachPageContainer {
+	position: relative;
+    margin: auto;
+    padding:20px;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #cfe2f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	.coachProfileHeader {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding-bottom: 20px;
+	    border-bottom: 1px solid #ddd;
+		img {
+		    width: 150px;
+		    height: 150px;
+		    border-radius: 50%;
+		    object-fit: cover;
+		    border: 3px solid #ddd;
+		}
+		.coachInfo {
+		    flex: 1;
+		    margin-left: 20px;
+		    text-align: left;
+			h2 {
+			    font-size: 28px;
+			    color: #007bff;
+			    margin: 0 0 10px 0;        
+			}
+			.coachDetails p {
+			    margin: 5px 0;
+			    font-size: 18px;
+			}
+		}
+	}
+	.coachTec {
+	    text-align: left;
+	    margin: 20px 0px 20px 0px;
+		p {
+		    font-size: 16px;
+		    margin: 5px 0;
+		    color: #555;
+		}
+		ul {
+			margin:10px;
+			li:nth-child(odd){
+				a{
+				text-decoration: none;	
+				color: black;
+				}
+				font-weight:bold;
+		   	 	font-size: 20px;
+			}
+			li:nth-child(even){
+				list-style-type: none;
+				color: #555;
+			}
+		}
+	}
+	
+}
+/*功能按鈕位置設定*/
+.btnLike{
+    a {
+        text-decoration: none;
+        display: inline-block; 
+        padding: 3px 6px;
+        background-color: #416c9e; 
+        color: #fff;
+        border-radius: 4px;
+        transition: background-color 0.3s; 
+        margin: -5px;
+    }
+    a:hover {
+        background-color: #2f5b80; 
+        color: #fff
+    }
+    .link-btn1 {
+        position: absolute;
+        top: 7px;
+        left: 60%;
+    }
+    .link-btn2 {
+        position: absolute;
+        top: 7px;
+        left: 68%;
+    }
+	.link-btn3{
+		position: absolute;
+	    top: 7px;
+		left: 76%; 
+	}
+	.link-btn4{
+		position: absolute;
+	    top: 5px;
+		left: 84%; 
+	}
+	.link-goback{
+		position: absolute;
+	    top: 10px;
+		left: 90%; 	
+	}
+}
+/* 新增教練按鈕 */
+#newcoachbtn{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #416c9e;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}

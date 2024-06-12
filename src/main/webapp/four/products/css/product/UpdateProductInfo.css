@@ -1,0 +1,110 @@
+.update-success {
+    display: none;
+}
+
+.inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 450px;
+    height: 450px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-block input,
+#feature,
+#productCategory {
+    margin-left: 10px;
+}
+
+.update-title {
+    margin: 0px auto 30px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+label span {
+    margin-right: 5px;
+    color: red;
+}
+
+.update-input {
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#feature {
+    width: 300px;
+    height: 200px;
+}
+
+figure {
+    margin-right: 30px;
+}
+
+.functionBtn {
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: auto 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.functionBtn:hover,
+.update-input:focus {
+    box-shadow: 0 0 15px black;
+}
+
+.update-input:focus{
+	transition: background-color 0.5s ease-in-out;
+}
+
+.main-menu {
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+    padding: 10px 30px;
+    background-color: lightblue;
+}
+
+.update-submit {
+    position: relative;
+    left: 180px;
+    background-color: lightgreen;
+}
+
+.model-content{
+	height: 25%;
+}

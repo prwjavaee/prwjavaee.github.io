@@ -1,0 +1,181 @@
+/*body*/
+#foodList {
+	background-color: #EEE2E6;
+	font-size: 20px;
+	color: #50422ef1;
+	font-family: Microsoft JhengHei;
+	/* 字體:微軟正黑體 */
+	margin: 0px auto;
+	text-align: center;
+}
+
+/*新增按鈕*/
+.insertbtn {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.insertbtn button {
+	background-color: #5da85fab;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease;
+}
+
+/*圖案&字之間的距離*/
+.insertbtn button i {
+	margin-right: 10px;
+}
+
+.insertbtn button:hover {
+	background-color: #77e07ac5;
+}
+
+/*表格*/
+.foodTable {
+	width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+	/*所有表格等寬*/
+	table-layout: fixed;
+	background-color: #f1ebe2;
+	font-size: 15px;
+	color: #646374;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foodTable th,
+td {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #C1ACB5;
+}
+
+.foodTable th {
+	background-color: #D0B7BB;
+}
+
+/* 滑鼠選到的那一行 */
+.foodTable tr:hover {
+	background-color: #cce4eefd;
+}
+
+/* 刪除按鈕 */
+a.Idelete {
+	color: rgb(233, 71, 71);
+}
+
+/* 更新按鈕--列表 */
+a.Iupdate {
+	color: rgba(128, 128, 216, 0.842);
+}
+
+/*更新按鈕 --更新表單裡*/
+.updatebtn {
+	background-color: #8690a5;
+	color: white;
+	padding: 5px 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+.updatebtn:hover {
+	background-color: #a8abc7;
+}
+
+/* 查詢 */
+.querybtn {
+	background: #D0B7BB;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	width: 250px;
+	text-align: center;
+}
+
+input[type="text"],
+input[type="number"] {
+	width: calc(100% - 22px);
+	padding: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #8690a5;
+	color: white;
+	padding: 5px 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+input[type="submit"]:hover {
+	background-color: #a8abc7;
+}
+
+/*新增表單*/
+.insertFood {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+
+/*返回食品列表按鈕*/
+.backbtnForm {
+	display: flex;
+	/* 水平居中 */
+	justify-content: center;
+	margin-top: 20px;
+
+}
+
+.backbtn {
+	background-color: #8690a5;
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	display: flex;
+	align-items: baseline;
+}
+
+.backbtn i {
+	margin-right: 10px;
+}
+
+.backbtn:hover {
+	background-color: #a8abc7;
+
+}
